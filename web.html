@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta character="UTF-8">
+	<meta name="viewpoint" content ="width=device-width",initial_scale=1.0">
+	<title> Login to System </title>
+	<link rel = "stylesheet"  href="{{url_for('static',filename='style.css')}}">
+	<style>
+	body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-top: 10px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+}
+
+.line {
+    border-top: 1px solid #000;
+    margin-top: 20px;
+}
+
+	</style>
+</head>
+
+<body>
+	<div class="login-cointainer">
+	<h2> Login to system </h2>
+	<form method ="POST">
+		<label for="username"> Enter username </label>
+		<input type="text" id="username" name ="username" required>
+		
+		<label for="password"> Enter password </label>
+		<input type="password" id="password" name ="password" required>
+		
+		<button type="submit">Login</button>
+		
+	</form>
+	<div class ="line"></div>
+	</div>
+</body>
+</html>
